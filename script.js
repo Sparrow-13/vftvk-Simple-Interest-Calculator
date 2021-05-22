@@ -1,18 +1,14 @@
 function compute()
 {
-    p = document.getElementById("principal").value;
-    r = document.getElementById("rate").value;
-    t = documnet.getElementById("years").value;
+   var p = document.getElementById("principal").value;
+   var r = document.getElementById("rate").value;
+   var t = documnet.getElementById("years").value;
     var si = (p*r*t)/100;
-    interest = document.getElementById("result").innerHTML="If you deposit : ";
-    interest.appendChild(p);
-    interest.innerHTML = "at an interest of : ";
-    interest.appendChild(r);
-    interest.innerHTML = "you will recieve  Amount of :  ";
-    interest.appendChild(si);
-    interest.innerHTML = "in year : ";
-    interest.appendChild(t);
-    
+    interest = document.getElementById("result").innerHTML="If you deposit : " + parsefloat(p)+;
+    interest.innerHTML="at an interest of "+ parsefloat(r)+"%";
+    interest.ineerHTML ="You will recieve an amount of "+ parsefloat(si);
+    interest.innerHTML = "in the year "+parseint(t+2020);
+   
 }
 var slider = document.getElementById("rate");
 var output = document.getElementById("demo");
