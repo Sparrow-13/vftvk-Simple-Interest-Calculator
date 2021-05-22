@@ -1,5 +1,6 @@
 function compute()
-{
+{  
+   alert("please wait");
    var p = document.getElementById("principal").value;
    var r = document.getElementById("rate").value;
    var t = documnet.getElementById("years").value;
