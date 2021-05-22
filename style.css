@@ -1,10 +1,12 @@
-body {background-color:black;}
-h1{color:green;}
-.main-div{
-  background-color:#FFF;
-  margin:10;
-  padding:10;
+body{
+  background-color:#000000;
 }
-
-
-
+.main_div{
+  background-color:#FFF;
+  margin:auto;
+  border-radius:20px;
+}
+input [type=number]{
+  height:20px;
+  width:40px;
+}
