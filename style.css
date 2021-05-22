@@ -13,3 +13,6 @@ input [type=number]{
   height:20px;
   width:40px;
 }
+p{
+  text-aling:left;
+}
