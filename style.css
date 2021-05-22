@@ -1,19 +1,22 @@
-body{
-  background-color:#000000;
+body {
+    background-color: #000000;
 }
-.main_div{
-  background-color:#FFF;
-  margin:auto;
-  padding :20px;
-  width:auto;
-  border-radius:20px;
-  color:gray;
-  text-align:center;
+
+.main_div {
+    background-color: #FFF;
+    margin: auto;
+    padding: 20px;
+    width: 400px;
+    border-radius: 20px;
+    color: gray;
+    text-align: center;
 }
-input [type=number]{
-  height:20px;
-  width:40px;
+
+input [type=number] {
+    height: 20px;
+    width: 40px;
 }
-p{
-  text-aling:left;
+
+.copyright {
+    text-align: left;
 }
