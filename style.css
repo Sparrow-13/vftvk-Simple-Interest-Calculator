@@ -4,7 +4,10 @@ body{
 .main_div{
   background-color:#FFF;
   margin:auto;
+  padding :20px;
   border-radius:20px;
+  color:gray;
+  text-align:center;
 }
 input [type=number]{
   height:20px;
