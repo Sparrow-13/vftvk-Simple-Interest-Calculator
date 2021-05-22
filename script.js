@@ -1,21 +1,23 @@
-function compute()
-{  
-   alert("please wait");
-   var p = document.getElementById("principal").value;
-   var r = document.getElementById("rate").value;
-   var t = documnet.getElementById("years").value;
-    var si = (p*r*t)/100;
-    interest = document.getElementById("result").innerHTML="If you deposit : " + parsefloat(p)+;
-    interest.innerHTML="at an interest of "+ parsefloat(r)+"%";
-    interest.ineerHTML ="You will recieve an amount of "+ parsefloat(si);
-    interest.innerHTML = "in the year "+parseint(t+2020);
-   
-}
-var slider = document.getElementById("rate");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value; // Display the default slider value
+ function compute() {
+     var p = parseInt(document.getElementById("principal").value);
+     if (p < 0) {
+         alert("Enter the postive value");
+         return;
+     }
+     var r = parseInt(document.getElementById("rate").value);
+     var t = parseInt(document.getElementById("years").value);
+     var si = ((p * r * t) / 100) + p;
+     t = parseInt(t) + parseInt(2020);
+     if (r == NaN) {
+         r = parseInt(document.getElementById("rate").value);
+     }
 
-// Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}     
+     var r = document.getElementById("result");
+     r.innerHTML = "if you deposit " + parseInt(p) + "<br/>at an interest of " + parseInt(r) + "<br/> You will recieve an amount of " + parseFloat(si) + "<br/>in the year " + t;
+
+ }
+
+ function r() {
+     var x = document.getElementById("myRange").value;
+     document.getElementById("demo").innerHTML = x + "%";
+ }
