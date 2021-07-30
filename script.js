@@ -19,5 +19,5 @@
 
  function r() {
      var x = document.getElementById("myRange").value;
-     document.getElementById("demo").innerHTML = x + "%";
+//      document.getElementById("demo").innerHTML = x + "%";
  }
